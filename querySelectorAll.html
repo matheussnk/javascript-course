@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html lang="pt-br">
+  <head>
+    <title>Structure DOM querySelector on JS and Jquery</title>
+  </head>
+  <body>
+    <div class="test">1</div>
+    <div class="test">2</div>
+    <div class="test">3</div>
+    
+    <div id="pai">
+        <div class="filho">1</div>
+        <div class="filho">2</div>
+        <div class="filho">3</div>
+    </div>
+
+    <p>Olá</p>
+    <p>Hello World</p>
+<script>
+    console.log(
+      document.querySelectorAll(".test") // Busca nas divs com o nome test
+
+        )
+    console.log(
+      document.getElementById("pai").querySelectorAll(".filho")[0].innerHTML// Busca nas divs com o nome test
+      
+        )    
+</script>
+  </body>
+</html>
