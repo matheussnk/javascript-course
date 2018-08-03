@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+  <head>
+    <title>Structure DOM parentNode on JS and Jquery</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <p>parentNode retorna o elemento pai do selecionado através do querySelector 
+    (objeto).parentNode</p>
+    <br>
+    <div id="linux">
+      <div class="ubuntu">
+        Ubuntu
+        <div class="elementaryos">elementary OS</div>
+      </div>
+      <div class="debian">Debian</div>
+  </div>
+  <script>
+      console.log (
+        document.querySelector(".elementaryos").parentNode
+      )
+  </script>
+  </body>
+</html>
