@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+  <head>
+    <title>Structure DOM removeChild on JS and Jquery</title>
+  </head>
+  <body>
+    <h1>Nissan Models </h1>
+
+    <p>Incremment via appendChild<br>Example : <br>
+      var sentra = document.createElement("p");<br>
+      sentra.innerHTML = "sentra";<br>
+      document.getElementById("nissan").appendChild(sentra);</p>
+    <div id="nissan">
+
+    </div>
+<script>
+    var versa = document.createElement("p");
+    versa.innerHTML = "versa";
+    
+    var sentra = document.createElement("p");
+    sentra.innerHTML = "sentra";
+    
+    document.getElementById("nissan").appendChild(versa);
+    document.getElementById("nissan").appendChild(sentra);
+    document.getElementById("nissan").removeChild(sentra);//Remove a inserção do append
+</script>
+  </body>
+</html>       
