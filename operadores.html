@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Operadores Matematicos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    body{
+        padding: 15px;
+        margin: 15px;
+    }
+h1{
+    text-align: center; 
+}
+</style>
+<body>
+    <h1>Operadores Matematicos</h1>
+    <p>Soma imutavel com a representação do simbolo +<br>
+    Subtração represetado pelo simbolo -<br>
+    Multiplicação represetado pelo simbolo *<br>
+    Divisão representado pela /</p>
+    <p>Subtração : <b id="sub"></b><br> 
+    function sub(p1, p2) {
+        return p1 - p2;
+    }
+    document.getElementById("sub").innerHTML = sub(15, 7);//Exibir no HTML<br>
+
+    Soma:<b id='soma'></b><br>
+    function soma(p3, p4) {
+        return p3 + p4;
+    }
+    document.getElementById("soma").innerHTML = soma(15, 7);<br>
+
+    Divisão:<b id='div'></b><br>
+    function div(p3, p4) {
+        return p3 / p4;
+    }
+    document.getElementById("div").innerHTML = div(42, 7);<br>
+
+    Multiplicação:<b id='mult'></b><br>
+    function div(p3, p4) {
+        return p3 * p4;
+    }
+    document.getElementById("mult").innerHTML = mult(6, 7);<br>
+
+</p>
+   <script>
+function sub(p1, p2) {
+    return p1 - p2;
+}
+document.getElementById("sub").innerHTML = sub(15, 7);
+
+
+function soma(p3, p4) {
+    return p3 + p4;
+}
+document.getElementById("soma").innerHTML = soma(15, 7);
+
+function div(p3, p4) {
+    return p3 / p4;
+}
+document.getElementById("div").innerHTML = div(42, 7);
+
+
+function mult(p3, p4) {
+    return p3 * p4;
+}
+document.getElementById("mult").innerHTML = mult(6, 7);
+    </script>
+</body>
+</html>
